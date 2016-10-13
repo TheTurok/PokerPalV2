@@ -1,3 +1,35 @@
 <resources>
     <string name="app_name">PokerPalV2</string>
+
+    <!-- Main Menu -->
+    <string name="newGame">New Game</string>
+    <string name="loadGame">Load Game</string>
+
+    <!-- Neww Game Options -->
+    <string name="startingStack">Starting Stack</string>
+    <string name="gameOptions">Game Options</string>
+    <string name="cashGame">Cahs Game</string>
+    <string name="tournament">Tournament</string>
+    <string name="confirm">Confirm</string>
+    <string name="bigBlind">Big Blind</string>
+    <string name="smallBlind">Small Blind</string>
+
+
+    <!-- Player Inforamtion -->
+    <string name="playerName">Player Name</string>
+    <string name="stack">Stack</string>
+    <string name="dealerButton">DB</string>
+
+
+    <!-- Main Menu String -->
+
+
+    <!-- Main Menu String -->
+
+
+    <!-- Main Menu String -->
+
+
+    <!-- Main Menu String -->
+
 </resources>
