@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="3dip">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="18dip"
+        android:layout_margin="5dip"
+        android:gravity="center"
+        android:src="@drawable/green_light"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:id="@+id/turnLight" />
+
+    <TextView
+        android:layout_marginTop="4dip"
+        android:textColor="#ffffff"
+        android:layout_width="84dip"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Player 1"
+        android:id="@+id/populateName" />
+
+    <TextView
+        android:layout_marginTop="4dip"
+        android:textColor="#ffffff"
+        android:layout_width="90dip"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="0000"
+        android:gravity="center"
+        android:id="@+id/populateMoney" />
+
+    <TextView
+        android:layout_marginTop="4dip"
+        android:textColor="#ffffff"
+        android:layout_width="90dip"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:gravity="center"
+        android:text="750"
+        android:id="@+id/populateBet" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="28dip"
+        android:gravity="center"
+        android:src="@drawable/sitoutimage"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:id="@+id/sitImage" />
+
+
+</LinearLayout>
