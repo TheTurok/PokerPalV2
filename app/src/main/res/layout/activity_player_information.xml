@@ -16,6 +16,7 @@
         android:layout_toEndOf="@id/textView1"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="@string/playerName"
+        android:paddingBottom="8dip"
         android:id="@+id/textView" />
 
     <TextView

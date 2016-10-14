@@ -156,7 +156,7 @@
         <Button
             android:textColor="#ffffff"
             android:layout_width="match_parent"
-            android:layout_height="75dp"
+            android:layout_height="68dp"
             android:text="@string/bet"
             android:id="@+id/bet"
             android:layout_weight="33.33" />
@@ -165,7 +165,7 @@
         <Button
             android:textColor="#ffffff"
             android:layout_width="match_parent"
-            android:layout_height="75dp"
+            android:layout_height="68dp"
             android:text="@string/call"
             android:id="@+id/call"
             android:layout_weight="33.33"/>
@@ -173,7 +173,7 @@
         <Button
             android:textColor="#ffffff"
             android:layout_width="match_parent"
-            android:layout_height="75dp"
+            android:layout_height="68dp"
             android:text="@string/fold"
             android:id="@+id/fold"
             android:layout_weight="33.33" />
