@@ -13,7 +13,7 @@ public class NewGameOptions extends AppCompatActivity {
         setContentView(R.layout.activity_new_game_options);
     }
 
-    public void newGame(View v){
+    public void Confirm(View v){
         Intent intent = new Intent(this, PlayerInformation.class);
         startActivity(intent);
     }

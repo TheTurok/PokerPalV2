@@ -9,13 +9,6 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="tjcrew.pokerpalv2.PlayerInformation">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="@string/dealerButton"
-        android:id="@+id/textView1"
-        android:paddingEnd="20dip"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -34,11 +27,219 @@
         android:id="@+id/textView2"
         android:paddingEnd="25dip"/>
 
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Empty"
+        android:ems="10"
+        android:id="@+id/playerName1"
+        android:paddingTop="10dip"
+        android:layout_below="@+id/textView" />
 
+    <EditText
+        android:layout_width="100dip"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Empty"
+        android:ems="10"
+        android:id="@+id/playerStack1"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/textView" />
 
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Empty"
+        android:ems="10"
+        android:id="@+id/playerName2"
+        android:layout_below="@+id/playerName1" />
 
+    <EditText
+        android:layout_width="100dip"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Empty"
+        android:ems="10"
+        android:id="@+id/playerStack2"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/playerName1" />
 
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Empty"
+        android:ems="10"
+        android:id="@+id/playerName3"
+        android:layout_below="@+id/playerName2" />
 
+    <EditText
+        android:layout_width="100dip"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Empty"
+        android:ems="10"
+        android:id="@+id/playerStack3"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/playerName2" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Empty"
+        android:ems="10"
+        android:id="@+id/playerName4"
+        android:layout_below="@+id/playerName3" />
+
+    <EditText
+        android:layout_width="100dip"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Empty"
+        android:ems="10"
+        android:id="@+id/playerStack4"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/playerName3" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Empty"
+        android:ems="10"
+        android:id="@+id/playerName5"
+        android:layout_below="@+id/playerName4" />
+
+    <EditText
+        android:layout_width="100dip"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Empty"
+        android:ems="10"
+        android:id="@+id/playerStack5"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/playerName4" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Empty"
+        android:ems="10"
+        android:id="@+id/playerName6"
+        android:layout_below="@+id/playerName5" />
+
+    <EditText
+        android:layout_width="100dip"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Empty"
+        android:ems="10"
+        android:id="@+id/playerStack6"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/playerName5" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Empty"
+        android:ems="10"
+        android:id="@+id/playerName7"
+        android:layout_below="@+id/playerName6" />
+
+    <EditText
+        android:layout_width="100dip"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Empty"
+        android:ems="10"
+        android:id="@+id/playerStack7"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/playerName6" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Empty"
+        android:ems="10"
+        android:id="@+id/playerName8"
+        android:layout_below="@+id/playerName7" />
+
+    <EditText
+        android:layout_width="100dip"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Empty"
+        android:ems="10"
+        android:id="@+id/playerStack8"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/playerName7" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Empty"
+        android:ems="10"
+        android:id="@+id/playerName9"
+        android:layout_below="@+id/playerName8" />
+
+    <EditText
+        android:layout_width="100dip"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Empty"
+        android:ems="10"
+        android:id="@+id/playerStack9"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/playerName8" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/playerStack9"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/random"
+        android:paddingTop="4dip"
+        android:id="@+id/textView8" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBox"
+        android:layout_below="@+id/textView8" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dip"
+        android:paddingTop="2dip"
+        android:layout_below="@id/textView8"
+        android:text="@string/dealerButton"
+        android:layout_toEndOf="@id/checkBox"
+        android:id="@+id/textView9" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBox2"
+        android:layout_toLeftOf="@id/textView10"
+        android:layout_below="@+id/textView8" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dip"
+        android:paddingTop="2dip"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/textView8"
+        android:text="@string/playerPosition"
+        android:id="@+id/textView10" />
 
     <Button
         android:layout_width="200dip"
@@ -47,6 +248,6 @@
         android:id="@+id/button"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:onClick="populateInfoConfirm"/>
+        android:onClick="Confirm"/>
 
 </RelativeLayout>

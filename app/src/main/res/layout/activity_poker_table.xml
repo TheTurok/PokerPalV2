@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="tjcrew.pokerpalv2.PokerTable">
+
+    <TextView
+        android:textColor="#ffffff"
+        android:id="@+id/totalP"
+        android:text="@string/totalPot"
+        android:gravity="start"
+        android:textSize="22sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:textColor="#ffffff"
+        android:id="@+id/potnumber"
+        android:text="@string/totalPotValue"
+        android:textSize="26sp"
+        android:layout_width="185dip"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="-5dp"
+        android:layout_toEndOf="@+id/totalP"/>
+
+
+    <TextView
+        android:textColor="#ffffff"
+        android:id="@+id/thePot"
+        android:text="@string/pot"
+        android:textSize="20sp"
+        android:layout_alignStart="@id/totalP"
+        android:layout_alignEnd="@id/totalP"
+        android:layout_width="0dp"
+        android:gravity="center"
+        android:layout_margin="5dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/totalP" />
+
+    <TextView
+        android:textColor="#ffffff"
+        android:id="@+id/thepotnumber"
+        android:text="@string/potValue"
+        android:textSize="18sp"
+        android:layout_alignStart="@id/potnumber"
+        android:layout_alignEnd="@id/potnumber"
+        android:layout_width="0dp"
+        android:gravity="center"
+        android:layout_margin="5dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/totalP"/>
+
+
+    <TextView
+        android:textColor="#ffffff"
+        android:id="@+id/clockTitle"
+        android:text="@string/clock"
+        android:textSize="22sp"
+        android:layout_width="75dip"
+        android:layout_alignParentEnd="true"
+        android:gravity="center"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:textColor="#ffffff"
+        android:id="@+id/clock"
+        android:text="@string/clockValue"
+        android:textSize="26sp"
+        android:layout_width="0dp"
+        android:layout_alignStart="@id/clockTitle"
+        android:layout_alignEnd="@id/clockTitle"
+        android:layout_alignParentEnd="true"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/clockTitle"/>
+
+    <TextView
+        android:textColor="#ffffff"
+        android:id="@+id/labelname"
+        android:text="@string/players"
+        android:textSize="18sp"
+        android:layout_width="100dip"
+        android:layout_height="wrap_content"
+        android:paddingStart="25dip"
+        android:paddingTop="15dip"
+        android:gravity="center"
+        android:layout_below="@+id/thePot"/>
+
+    <TextView
+        android:textColor="#ffffff"
+        android:id="@+id/labelBank"
+        android:text="@string/stack"
+        android:textSize="18sp"
+        android:layout_width="120dip"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dip"
+        android:gravity="center"
+        android:layout_below="@+id/thePot"
+        android:layout_toEndOf="@id/labelname"/>
+
+    <TextView
+        android:textColor="#ffffff"
+        android:id="@+id/labelBet"
+        android:text="@string/bet"
+        android:textSize="18sp"
+        android:layout_width="60dip"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dip"
+        android:gravity="center"
+        android:layout_below="@+id/thePot"
+        android:layout_toEndOf="@id/labelBank"/>
+
+    <TextView
+        android:textColor="#ffffff"
+        android:id="@+id/labelSit"
+        android:text="@string/sit"
+        android:textSize="18sp"
+        android:layout_width="80dip"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dip"
+        android:paddingStart="15dip"
+        android:gravity="center"
+        android:layout_below="@+id/thePot"
+        android:layout_toEndOf="@id/labelBet"/>
+
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="5dp"
+        android:id="@+id/linearLayout"
+        android:layout_above="@+id/linearLayout69">
+
+        <Button
+            android:textColor="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:text="@string/bet"
+            android:id="@+id/bet"
+            android:layout_weight="33.33" />
+        <!--android:onClick="betClick"-->
+
+        <Button
+            android:textColor="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:text="@string/call"
+            android:id="@+id/call"
+            android:layout_weight="33.33"/>
+
+        <Button
+            android:textColor="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:text="@string/fold"
+            android:id="@+id/fold"
+            android:layout_weight="33.33" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout69">
+
+        <TextView
+            android:textColor="#ffffff"
+            android:id="@+id/Message"
+            android:text="@string/message"
+            android:textSize="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="5"/>
+
+        <Button
+            android:textColor="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="@string/confirm"
+            android:id="@+id/Confirmation"
+            android:layout_weight="7" />
+
+    </LinearLayout>
+
+</RelativeLayout>

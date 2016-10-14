@@ -14,14 +14,29 @@
     <string name="bigBlind">Big Blind</string>
     <string name="smallBlind">Small Blind</string>
 
-
     <!-- Player Inforamtion -->
     <string name="playerName">Player Name</string>
     <string name="stack">Stack</string>
-    <string name="dealerButton">DB</string>
+    <string name="dealerButton">Dealer Button</string>
+    <string name="empty">Empty</string>
+    <string name="random">Random</string>
+    <string name="playerPosition">Player Position</string>
 
 
-    <!-- Main Menu String -->
+    <!-- Poker Table -->
+    <string name="totalPot">Total Pot</string>
+    <string name="pot">Pot</string>
+    <string name="totalPotValue">000000</string>
+    <string name="potValue">000000</string>
+    <string name="clock">Clock</string>
+    <string name="clockValue">5:00</string>
+    <string name="players">Players</string>
+    <string name="bet">Bet</string>
+    <string name="sit">Sit</string>
+    <string name="call">Call</string>
+    <string name="fold">Fold</string>
+    <string name="message">Message</string>
+
 
 
     <!-- Main Menu String -->
