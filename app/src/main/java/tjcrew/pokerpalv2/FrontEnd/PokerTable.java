@@ -1,4 +1,4 @@
-package tjcrew.pokerpalv2;
+package tjcrew.pokerpalv2.FrontEnd;
 
 import android.content.Context;
 import android.support.v7.app.AppCompatActivity;
@@ -12,6 +12,8 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
+
+import tjcrew.pokerpalv2.R;
 
 public class PokerTable extends AppCompatActivity {
 

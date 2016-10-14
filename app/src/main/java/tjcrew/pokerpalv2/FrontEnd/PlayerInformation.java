@@ -1,9 +1,11 @@
-package tjcrew.pokerpalv2;
+package tjcrew.pokerpalv2.FrontEnd;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+
+import tjcrew.pokerpalv2.R;
 
 public class PlayerInformation extends AppCompatActivity {
 
