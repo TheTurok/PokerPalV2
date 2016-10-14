@@ -8,7 +8,7 @@
     <!-- Neww Game Options -->
     <string name="startingStack">Starting Stack</string>
     <string name="gameOptions">Game Options</string>
-    <string name="cashGame">Cahs Game</string>
+    <string name="cashGame">Cash Game</string>
     <string name="tournament">Tournament</string>
     <string name="confirm">Confirm</string>
     <string name="bigBlind">Big Blind</string>
