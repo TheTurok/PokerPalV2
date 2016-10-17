@@ -14,7 +14,7 @@
     <string name="bigBlind">Big Blind</string>
     <string name="smallBlind">Small Blind</string>
 
-    <!-- Player Inforamtion -->
+    <!-- Player Information -->
     <string name="playerName">Player Name</string>
     <string name="stack">Stack</string>
     <string name="dealerButton">Dealer Button</string>
