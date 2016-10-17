@@ -3,6 +3,8 @@ package tjcrew.pokerpalv2.BackEnd;
 import android.content.Intent;
 import android.view.View;
 
+import java.util.ArrayList;
+
 import tjcrew.pokerpalv2.FrontEnd.PlayerInformation;
 import tjcrew.pokerpalv2.FrontEnd.PokerTable;
 
@@ -55,7 +57,7 @@ public class Players {
         if (!masterListInitialized)
         {
             masterList = new ArrayList<Players>();
-            masterListInitialzed = true;
+            masterListInitialized = true;
         }
 
         money = 0;

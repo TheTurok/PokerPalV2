@@ -25,7 +25,8 @@ public static void main(String[] args) {
 
 */
 
-import Players.java
+import tjcrew.pokerpalv2.BackEnd.Players;
+import tjcrew.pokerpalv2.BackEnd.Players.java;
 
 public static class Actions {
     
