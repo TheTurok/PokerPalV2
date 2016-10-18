@@ -2,24 +2,24 @@
 Actions.java
 
 'Actions' is a public static helper class designed to
-simplify the class declaration of Game and Players in 
+simplify the class declaration of GameLogic and Players in 
 the app. There are no 'Actions' objects. Rather,
 'Actions' contains member functions that act
-on 'Game' and/or 'Players' objects in ways that correspond
+on 'GameLogic' and/or 'Players' objects in ways that correspond
 to actions taken by players during betting rounds of
-poker games.
+poker games. Most of the functionality achieved by Actions
+is done so by acting directly on the MasterList of Players
+for simplicity.
 
 ### Example usage
 
 public static void main(String[] args) {
-    //Game declared
-    Game newGame = new Game();
     
     //A player named "PlayerX" folds, so we ovewrwrite our old game with a new game
     where PlayerX is folded.
-    newGame = Actions.fold(newGame, "PlayerX");
+    Actions.fold("PlayerX");
     //A player named "PlayerY" checks
-    newGame = Actions.check(newGame, "PlayerY");
+    Actions.check("PlayerY");
 
 } 
 
@@ -32,35 +32,31 @@ public static class Actions {
     
 
     /*
-        fold is a function that affects both Game and Players objects. 
-        It will change the status of aPlayer in aGame to FOLDED 
-        provided that aPlayer is in aGame. If aPlayer is not in a game,
+        fold is a function that affects Players objects. 
+        It will change the status of aPlayer to FOLDED 
+        provided that aPlayer is in the Players MasterList
+        and the Player can actually FOLD. If aPlayer is not in a game,
         we will throw an exception.
-
-        @param aGame: A valid Game object with players. fold should not
-        be called if there are no players in the game, so fold throws
-        an exception in that case. 
 
         @param aPlayer: A valid Players object who wishes to perform a
         fold action during their turn on the current betting round. 
-        aPlayer should be a Players within the Game object, and fold
+        aPlayer should be a Players within the MasterList of Players, and fold
         throws an exception if this case is not met. 
 
-        @return aGame: Provided that aGame and aPlayer meet all the
-        required conditions, fold returns aGame with aPlayer that has
-        the status FOLDED.
+        @return: No return. Provided aPlayer is in the MasterList and is currently
+        in the Poker game being played, aPlayer has its status set to FOLDED.
     */
-    public Game fold(Game aGame, Players aPlayer) {
+    public void fold(Players aPlayer) {
         
         //Make sure aGame is not empty
-        if (aGame.numPlayers() <= 0)
+        if(Players.MasterList.size() <= 0)
             throw new IndexOutOfBoundsException("ERROR: Tried to do action with"
                                                  + "no Players in game.");
 
         boolean foundPlayer = false;
         int masterListIndexOfPlayer = -1;
         //Check aGame to make sure that aPlayer is actually in aGame
-        for (int i = 0; i < aGame.numPlayers(); i++) {
+        for (int i = 0; i < Players.MasterList.size(); i++) {
             if (Players.masterList[i] == aPlayer) {
                 foundPlayer = true;
                 masterListIndexOfPlayer = i;
@@ -75,10 +71,13 @@ public static class Actions {
             return;
         }
 
+        //A player can only fold if it is legally their move to make
+        //i.e, they are ACTIONABLE. This is another silent error.
+        if (aPlayer.getStatus() != ACTIONABLE)
+            return;
+
         //Set aPlayer to folded then replace them in the masterList
         aPlayer.setStatus(Player.Status.FOLDED);
         Players.masterList[masterListIndexOfPlayer] = aPlayer;
-
-        return aGame;
     }
 }
