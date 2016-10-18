@@ -62,6 +62,8 @@ public class Players {
 
         money = 0;
         name = "noName";
+
+        masterList.push_back(this);
     }
 
     /*

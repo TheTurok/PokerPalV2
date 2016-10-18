@@ -51,11 +51,34 @@ public static class Actions {
         the status FOLDED.
     */
     public Game fold(Game aGame, Players aPlayer) {
-        //Check aGame to make sure that aPlayer is actually in aGame
+        
+        //Make sure aGame is not empty
+        if (aGame.numPlayers() <= 0)
+            throw new IndexOutOfBoundsException("ERROR: Tried to do action with"
+                                                 + "no Players in game.");
 
-        //If the player is in the game, set their status to folded
+        boolean foundPlayer = false;
+        int masterListIndexOfPlayer = -1;
+        //Check aGame to make sure that aPlayer is actually in aGame
+        for (int i = 0; i < aGame.numPlayers(); i++) {
+            if (Players.masterList[i] == aPlayer) {
+                foundPlayer = true;
+                masterListIndexOfPlayer = i;
+                break;
+            }
+        }
+
+        //Silent error if the player is not in the game.
+        if (!foundPlayer) {
+            System.out.println("ERROR: The player that needed to be folded was " 
+                                + "not found in the game.");
+            return;
+        }
+
+        //Set aPlayer to folded then replace them in the masterList
+        aPlayer.setStatus(Player.Status.FOLDED);
+        Players.masterList[masterListIndexOfPlayer] = aPlayer;
 
         return aGame;
-
     }
 }
